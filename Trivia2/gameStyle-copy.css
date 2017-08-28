@@ -1,0 +1,133 @@
+
+
+body {
+  background-image: url('./assets/world.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px yellow, 0 0 25px yellow, 0 0 5px orange;
+  animation:
+    pulse 3s ease infinite alternate,
+    nudge 5s linear infinite alternate;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: none;
+  }
+  50% {
+    background-color: none;
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(150px, 0);
+  }
+
+  80% {
+    transform: translate(-150px, 0);
+  }
+}
+
+#container {
+  font-size: 50px;
+  border: 3px solid black;
+  height: 300px;
+  padding: 50px;
+  padding-top: 200px;
+  padding-left: 90px;
+  padding-right: 150px;
+  margin:5% 15%;
+  align-content: center;
+  width: 700px;
+}
+
+#question {
+  position: absolute;
+  text-shadow: yellow;
+  top: 400px;
+  font-size: 30px;
+  animation-timing-function: 2 5 px;
+  height: 70px;
+  margin: -15% 0%;
+  width: 650px;
+  border: 1px solid black;
+  -webkit-align-items: center;
+}
+
+.answer {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 35px;
+  width: 100px;
+}
+
+#choice0 {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 30px;
+  width: 250px;
+}
+
+#choice1 {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 30px;
+  width: 250px;
+}
+
+#choice2 {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 30px;
+  width: 250px;
+}
+
+#choice3 {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 30px;
+  width: 250px;
+}
+
+#next {
+  font-size: 30px;
+  border: 3px solid black;
+  margin: -80%;
+  height: 50px;
+  width: 150px;
+}
+
+#reset {
+  font-size: 30px;
+  border: 3px solid black;
+  margin: -80%;
+  height: 50px;
+  width: 150px;
+}
+
+.selected {
+  background-color: brown;
+  color: white;
+}
+
+#result {
+
+}
+
+button:hover {
+    background-color: yellow;
+}
