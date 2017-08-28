@@ -108,23 +108,39 @@ function nextQuestion(){
       // if it's equals or larger than length
       // remove listener
       $('#next').off('click');
-      showResults ();
+      $('#next').text('Result');
+      $('#next').on('click', showResults);
+
+
+      // showResults ();
     }
 }
 
 function showResults () {
-  $('#next').text('Result');
-  $('#next').on('click', function() {
+  console.log('inside results');
+  $('.choice').remove();
+  // add class
   let counter = 0;
-  for (let i = 0; i >= answers.length; i++){
-  if (correct === true && answers[i]){
-    counter++
- // show results
- console.log('Your score is', answers);
-$('#result').text('You scored:' + correctAnswer + 'out of:' + quiz.length);
-      }
+  // walk all the answers and keep score
+  for (let i = 0; i < answers.length; i++){
+      // start creating a div element with result info
+      console.log('creating element');
+      // let responseContainer = $("div")
+      // $('.choice').remove();
+      // $('question').remove();
+      // $("h1").text(answers[i].question).appendTo(responseContainer);
+      // $("h2").text(answers[i].answer).appendTo(responseContainer);
+      // $("h3").text(answers[i].correct).appendTo(responseContainer);
+      // responseContainer.appendTo($('.question'));
+
+
+    // if (correct === true && answers[i]){
+    if (answers[i].correct == true){
+      counter++
+
     }
-  })
+  } // end forloop show results
+  $('#question').text('You scored ' + counter + ' out of ' + quiz.length);
 }
 
 // Reset Game
