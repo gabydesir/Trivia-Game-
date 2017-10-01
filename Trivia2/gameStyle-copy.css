@@ -1,5 +1,4 @@
 
-
 body {
   background-image: url('./assets/world.png');
   background-position: center right;
@@ -116,11 +115,16 @@ h1 {
   border: 3px solid black;
   margin: -80%;
   height: 50px;
-  width: 150px;
+  width: 160px;
 }
 
 .selected {
   background-color: brown;
+  color: white;
+}
+
+.correctAnswer {
+  background-color: green;
   color: white;
 }
 
@@ -130,4 +134,63 @@ h1 {
 
 button:hover {
     background-color: yellow;
+}
+
+.two {
+/*  background-image: url('./assets/world.png');
+*/ /* background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;*/
+}
+
+.landing {
+  display: none;
+}
+
+header {
+  color: #8B4513;
+  font-size: 80px;
+  text-align: center;
+}
+
+#start {
+  font-size: 50px;
+  font-family: comic sans ms;
+  color: yellow;
+  padding: 300px;
+  padding-left: 300px;
+  text-align: center;
+}
+
+#form {
+  padding: 40px;
+  font-size: 25px;
+}
+
+#input {
+  font-size: 30px;
+}
+
+#button:hover {
+  padding: 15px;
+  border: 2px;
+  font-size: 20px;
+  background-color: #CD853F;
+}
+
+#name {
+  padding: -120px;
+  font-size: 45px;
+  color: #8B4513;
+  font-style: italic;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+#img {
+  max-width: 100px;
+  max-height: 100px;
+/*  border: 3px solid black;
+*/ /*padding: 50px;
+  size: 40px;*/
 }

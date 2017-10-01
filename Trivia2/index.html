@@ -4,19 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <title> Trivia Game </title>
-  <link rel= "stylesheet" type= "text/css" href= "./landingStyle.css">
+  <link rel= "stylesheet" type= "text/css" href= "./gameStyle-copy.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
   <main>
-  <header>City Trivia</header>
+
+    <div id= "city">
+ <header>City Trivia</header>
+
+<form id="form">
+  <input id="input" type="text" placeholder="Enter Your Name"><br>
+  <input id="button" type="button" onclick="start()" value="Submit"><br>
+</form>
+    </div>
+
   </main>
 
-  <a id='start' href="game-copy.html">Start</a>
+<!--// this a tag links the landing page to the game
+// by clicking start the user is directed to the first question of the game
+-->
+
+ <!-- // 2nde HTML  -->
+<div class="two landing" id="2page">
+<main>
+<!-- // gave an id to my question element
+// will use class & ids to create my CSS page
+// created a container & gave a class element to all 4 answers
+ -->
+<div id="name" class="name"></div>
+<div id="container">
+  <div id='image'></div>
+  <div id="question"></div>
+  <div id="choice0" class="choice"></div>
+  <div id="choice1" class="choice"></div>
+  <div id="choice2" class="choice"></div>
+  <div id="choice3" class="choice"></div>
+  <div id="result"></div>
+
+<!--// Next button will prompt user the following question
+  until the end of the game. Reset button will restart the game
+  -->
+  <button id='next'>Next</button>
+  <button id='reset'>Play Again</button>
+
+</div>
+
+</main>
+
+<script src="game-copy.js"></script>
+</div>
+
 
 </body>
 </html>
-
-
-
 
