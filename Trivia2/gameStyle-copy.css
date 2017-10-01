@@ -1,7 +1,7 @@
 
 body {
   background-image: url('./assets/world.png');
-  background-position: center right;
+  background-position: center;
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -36,45 +36,22 @@ h1 {
   }
 }
 
-#container {
-  font-size: 50px;
-  border: 3px solid black;
-  height: 300px;
-  padding: 50px;
-  padding-top: 200px;
-  padding-left: 90px;
-  padding-right: 150px;
-  margin:5% 15%;
-  align-content: center;
-  width: 700px;
-}
 
 #question {
-  position: absolute;
-  text-shadow: yellow;
-  top: 400px;
   font-size: 30px;
-  animation-timing-function: 2 5 px;
-  height: 70px;
-  margin: -15% 0%;
-  width: 650px;
-  border: 1px solid black;
-  -webkit-align-items: center;
+  padding: 15px;
 }
 
-.answer {
-  font-size: 20px;
-  border: 1px solid black;
+.choice {
   padding: 10px;
-  margin: 35px;
-  width: 100px;
+  margin: 5px;
 }
 
 #choice0 {
   font-size: 20px;
   border: 1px solid black;
   padding: 10px;
-  margin: 30px;
+  margin: auto;
   width: 250px;
 }
 
@@ -82,7 +59,7 @@ h1 {
   font-size: 20px;
   border: 1px solid black;
   padding: 10px;
-  margin: 30px;
+  margin: auto;
   width: 250px;
 }
 
@@ -90,7 +67,7 @@ h1 {
   font-size: 20px;
   border: 1px solid black;
   padding: 10px;
-  margin: 30px;
+  margin: auto;
   width: 250px;
 }
 
@@ -98,24 +75,29 @@ h1 {
   font-size: 20px;
   border: 1px solid black;
   padding: 10px;
-  margin: 30px;
+  margin: auto;
   width: 250px;
 }
 
 #next {
   font-size: 30px;
   border: 3px solid black;
-  margin: -80%;
+  margin: 10%;
   height: 50px;
   width: 150px;
+  /*float: left;*/
+  /*align-self: left;*/
+
 }
 
 #reset {
   font-size: 30px;
   border: 3px solid black;
-  margin: -80%;
+  margin: 10%;
   height: 50px;
   width: 160px;
+  /*float: left;*/
+  /*align-self: left;*/
 }
 
 .selected {
@@ -128,19 +110,9 @@ h1 {
   color: white;
 }
 
-#result {
-
-}
 
 button:hover {
     background-color: yellow;
-}
-
-.two {
-/*  background-image: url('./assets/world.png');
-*/ /* background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;*/
 }
 
 .landing {
@@ -153,6 +125,7 @@ header {
   text-align: center;
 }
 
+/*start button to begin game */
 #start {
   font-size: 50px;
   font-family: comic sans ms;
@@ -162,15 +135,18 @@ header {
   text-align: center;
 }
 
+/*form */
 #form {
   padding: 40px;
   font-size: 25px;
 }
 
+/*input field */
 #input {
   font-size: 30px;
 }
 
+/*form button */
 #button:hover {
   padding: 15px;
   border: 2px;
@@ -178,6 +154,7 @@ header {
   background-color: #CD853F;
 }
 
+/*players' name */
 #name {
   padding: -120px;
   font-size: 45px;
@@ -187,10 +164,10 @@ header {
   font-variant: small-caps;
 }
 
+/*images */
 #img {
-  max-width: 100px;
-  max-height: 100px;
-/*  border: 3px solid black;
-*/ /*padding: 50px;
-  size: 40px;*/
+  /*max-width: 200px;*/
+  max-height: 350px;
+  margin: auto;
+  padding:10px;
 }

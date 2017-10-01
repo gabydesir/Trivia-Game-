@@ -70,7 +70,7 @@ var questionIndex = 0;
 let answers = [];
 
 function handleClickAnswer() {
-  // adding a selected class the each answer for user to click on
+  // adding a selected class to each answer for user to click on
   $(this).addClass('selected');
   let selectedAnswer = $(this).text();
   let isCorrect;
@@ -165,6 +165,7 @@ function showResults() {
   console.log('inside results');
   $('.choice').remove();
   $('#image').remove();
+  $('#next').remove();
 
   // add class
   let counter = 0;
