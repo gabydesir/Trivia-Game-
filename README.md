@@ -34,7 +34,6 @@ functionality of 'next' to it, in order to render the following questions.
 I then created helper functions to display the score. 
 
 Future Improvements 
-I would like to add an image to each question as a hint to the user. My goal is 
-to help the user answer the questions accurately, more importantly have a visual 
-representation of the potential location. 
+I would like to add a timer, and counter that keeps track of the users answer
+as they answer the questions. 
 

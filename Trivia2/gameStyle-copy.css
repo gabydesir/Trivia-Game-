@@ -6,46 +6,18 @@ body {
   text-align: center;
 }
 
-h1 {
-  text-shadow: 1px 1px 2px yellow, 0 0 25px yellow, 0 0 5px orange;
-  animation:
-    pulse 3s ease infinite alternate,
-    nudge 5s linear infinite alternate;
-}
 
-@keyframes pulse {
-  0%, 100% {
-    background-color: none;
-  }
-  50% {
-    background-color: none;
-  }
-}
-
-@keyframes nudge {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(150px, 0);
-  }
-
-  80% {
-    transform: translate(-150px, 0);
-  }
+#image {
+  margin: auto;
 }
 
 
 #question {
   font-size: 30px;
   padding: 15px;
+  margin: 15px;
 }
 
-.choice {
-  padding: 10px;
-  margin: 5px;
-}
 
 #choice0 {
   font-size: 20px;
@@ -107,7 +79,7 @@ h1 {
 
 .correctAnswer {
   background-color: green;
-  color: white;
+  /*color: white;*/
 }
 
 
@@ -156,7 +128,7 @@ header {
 
 /*players' name */
 #name {
-  padding: -120px;
+  padding: 50px;
   font-size: 45px;
   color: #8B4513;
   font-style: italic;
@@ -166,7 +138,6 @@ header {
 
 /*images */
 #img {
-  /*max-width: 200px;*/
   max-height: 350px;
   margin: auto;
   padding:10px;

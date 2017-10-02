@@ -37,7 +37,8 @@ let q3 = new Question('What is the capital of Bahrain?',
 let q4 = new Question('The currency of Bangladesh is',
   ['Euro', 'Taka', 'Lira', 'Bangladesh Peso'],
   'Taka',
-  'http://3.bp.blogspot.com/-PPnckeN5brs/TltZkSmS7jI/AAAAAAAAA48/-FVKCvArF5o/s1600/Dhaka_Lalbagh_Fort_DhakaCity_Bangladesh.jpg')
+  // 'http://3.bp.blogspot.com/-PPnckeN5brs/TltZkSmS7jI/AAAAAAAAA48/-FVKCvArF5o/s1600/Dhaka_Lalbagh_Fort_DhakaCity_Bangladesh.jpg')
+  'https://upload.wikimedia.org/wikipedia/en/e/e8/10_Bangladeshi_taka_rev_2011.jpg')
 
 let q5 = new Question('The 2nd largest country in the world is',
   ['Russia', 'Brazil', 'United States', 'Canada'],
@@ -68,34 +69,35 @@ const quiz = [q1, q2, q3, q4, q5, q6, q7, q8];
 // created an empty array of answers that will hold the user's responses.
 var questionIndex = 0;
 let answers = [];
+let currentAnswer = '';
 
 function handleClickAnswer() {
   // adding a selected class to each answer for user to click on
   $(this).addClass('selected');
-  let selectedAnswer = $(this).text();
+  currentAnswer = $(this).text();
   let isCorrect;
-  console.log('selected ->', selectedAnswer);
-  console.log('real answer -> ', quiz[questionIndex].answer)
+  // console.log('selected ->', selectedAnswer);
+  // console.log('real answer -> ', quiz[questionIndex].answer)
   // if the chosen answer is correct, turn green otherwise brown
-  if(selectedAnswer == quiz[questionIndex].answer){
-  isCorrect = true;
-  $(this).addClass('correctAnswer');
+  // if(selectedAnswer == quiz[questionIndex].answer){
+  // isCorrect = true;
+  // $(this).addClass('correctAnswer');
   $('.choice').off('click'); // after the user has selected the
   // correct answer remove the selected class.
-  $(this).parent().find('div').removeClass('selected');
-
-  } else {
-  isCorrect = false;
   // $(this).parent().find('div').removeClass('selected');
 
-  }
+  // } else {
+  // isCorrect = false;
+  // $(this).parent().find('div').removeClass('selected');
 
-  let newLog = {
-  question: quiz[questionIndex].question,
-  answer: selectedAnswer,
-  correct: isCorrect
-  }
-  answers.push(newLog);
+  // }
+
+  // let newLog = {
+  // question: quiz[questionIndex].question,
+  // answer: selectedAnswer,
+  // correct: isCorrect
+  // }
+  // answers.push(newLog);
   // remove all the listerners
   console.log('does it match?', isCorrect);
   console.log('answers array ->', answers);
@@ -124,6 +126,14 @@ function buildGame() {
 // click event on next to render the following questions
     $('#next').text('Next');
     $('#next').on('click',function(){
+
+      let newLog = {
+      question: quiz[questionIndex].question,
+      answer: currentAnswer,
+      correct: isCorrect()
+      }
+      answers.push(newLog);
+
       console.log('Please answer')
       questionIndex++;
       nextQuestion();
@@ -160,6 +170,14 @@ function nextQuestion() {
       $('#next').on('click', showResults);
     }
 }
+
+    function isCorrect (){
+    if(currentAnswer == quiz[questionIndex].answer){
+    return true
+    }else {
+    return false
+    }
+  }
 
 function showResults() {
   console.log('inside results');
