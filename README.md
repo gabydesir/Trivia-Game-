@@ -13,6 +13,7 @@ learning begin!
 
 Technologies used HTML/CSS, Javascript Classes, jQuery. 
 
+```
 class Question {
   constructor(questions,choices,answer){
     this.question = question,
@@ -26,6 +27,7 @@ let q1 = new Question
         ['Italy', 'Slovenia', 'Bosnia', 'Hungary'],
         'Bosnia'); 
 
+```
 
 Build Strategy 
 I created a class of Question and gave it properties of questions, choicess and 
