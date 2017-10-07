@@ -79,9 +79,7 @@ function handleClickAnswer() {
   // check the user's answer is correct
   if(currentAnswer == quiz[questionIndex].answer){
     isCorrect = true;
-
-  $('.choice').off('click'); // after the user has selected the
-    // correct answer remove the selected class.
+    } else isCorrect = false;
 
   let newLog = {
   question: quiz[questionIndex].question,
@@ -89,9 +87,11 @@ function handleClickAnswer() {
   correct: isCorrect
   }
   answers.push(newLog); // push user's answers into the answers array
-
+  $('.choice').off('click'); // after the user has selected the
+    // correct answer remove the selected class.
+  // $(this).removeClass('selected');
   }
-}
+
 
 // a function that displays the question & the choices in the
 // first question
@@ -115,6 +115,7 @@ function buildGame() {
 // click event on next to render the following questions
       $('#next').text('Next');
       $('#next').on('click', function(){
+      // $(selector).off('click')
 
       console.log('Please answer')
       questionIndex++;
@@ -164,6 +165,7 @@ function isCorrect() {
     return false
   }
 }
+
 
 function showResults() {
   console.log('inside results');
