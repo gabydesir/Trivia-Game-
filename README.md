@@ -10,8 +10,8 @@ each other's countries to have a better understanding of who they are.
 This quiz includes places that the user probably never heard about. Let the 
 learning begin! 
 
-
-Technologies used HTML/CSS, Javascript Classes, jQuery. 
+## Technologies 
+Technologies used included HTML/CSS, Javascript Classes, jQuery. 
 
 ```
 class Question {
@@ -29,13 +29,14 @@ let q1 = new Question
 
 ```
 
-Build Strategy 
-I created a class of Question and gave it properties of questions, choicess and 
+## Build Strategy 
+I created a class of Question and gave it properties of questions, choices and 
 correct answer. Then I created div that holds the question and added the 
 functionality of 'next' to it, in order to render the following questions. 
 I then created helper functions to display the score. 
 
-Future Improvements 
+
+## Future Improvements 
 I would like to add a timer, and counter that keeps track of the users answer
 as they answer the questions. 
 
