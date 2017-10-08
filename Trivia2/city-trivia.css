@@ -111,11 +111,12 @@ header {
 #form {
   padding: 40px;
   font-size: 25px;
+  margin: 70px;
 }
 
 /*input field */
 #input {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 /*form button */
@@ -124,6 +125,7 @@ header {
   border: 2px;
   font-size: 20px;
   background-color: #CD853F;
+  margin: 20px;
 }
 
 /*players' name */
