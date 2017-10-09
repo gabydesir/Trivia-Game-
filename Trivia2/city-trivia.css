@@ -105,6 +105,7 @@ header {
   padding: 300px;
   padding-left: 300px;
   text-align: center;
+  margin: 20px;
 }
 
 /*form */
@@ -117,6 +118,7 @@ header {
 /*input field */
 #input {
   font-size: 35px;
+  margin: 20px;
 }
 
 /*form button */
